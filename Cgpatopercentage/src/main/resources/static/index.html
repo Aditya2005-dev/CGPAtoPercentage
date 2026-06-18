@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CGPA to Percentage Converter</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>CGPA to Percentage Converter</h1>
+
+    <h2>Specially for SPPU University</h2>
+
+    <h5>
+        The percentage displayed by this calculator is an estimate based on the
+        official conversion formula prescribed by the Savitribai Phule Pune
+        University (SPPU) for CGPA-to-Percentage conversion.
+    </h5>
+
+    <!-- Calculator Section -->
+    <div id="form">
+
+        <label for="cgpa">Enter Your CGPA</label>
+
+        <input
+            type="number"
+            id="cgpa"
+            step="0.01"
+            placeholder="Example: 8.50">
+
+        <button onclick="send()">
+            Calculate Percentage
+        </button>
+
+        <h3 id="result"></h3>
+
+    </div>
+
+    <!-- Formula Image Section -->
+    <div class="image-section">
+
+        <h3>Official SPPU Conversion Formula</h3>
+
+        <img src="conversionformula.png"
+             alt="SPPU Conversion Formula">
+
+    </div>
+
+</div>
+
+<script src="Script.js"></script>
+
+</body>
+</html>
